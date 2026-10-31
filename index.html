@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{color:#6b7a3a;text-transform:uppercase;letter-spacing:.18em;font-size:12px}
 .card{background:transparent;border:0;border-top:1px solid #e0ddd0;border-radius:0;padding:16px 0 0}
 body::before{content:'';display:block;height:5px;background:#6b7a3a;position:sticky;top:0;z-index:9}
-background-image:repeating-linear-gradient(0deg, transparent 0 39px, #e0ddd0 39px 40px);
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:repeating-linear-gradient(0deg, transparent 0 39px, #e0ddd0 39px 40px)}
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #e0ddd0 39p
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>我关注术语表的一致性，因为它直接影响结论可不可信。</p>
+  <p>我关注术语表的一致性，因为它直接影响结论可不可信。 当前以硕士阶段研究角色的方式推进项目。</p>
   <ul class="traits">
     <li>能落地的方案优先于理论最优。</li>
     <li>每个做法都标清代价。</li>
@@ -89,12 +89,20 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #e0ddd0 39p
   <div class="grid two">
     <article class="card">
       <h3>术语表的一致性在不同数据分布下的稳健性</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>术语表的一致性的判定依据与复核方式</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>术语表的一致性里容易误判的情形与反例</h3>
+      <span class="status">持续跟进</span>
+    </article>
+    <article class="card">
+      <h3>在推进的问题</h3>
+      <p>（术语表的一致性场景）输入分布改变后，术语表的一致性的结论会不会失效？用口径一致性比对给出鲁棒性边界。</p>
+      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -102,6 +110,9 @@ background-image:repeating-linear-gradient(0deg, transparent 0 39px, #e0ddd0 39p
 <section id="work">
   <h2>开源</h2>
   <ul class="repos">
+    <li><div class="name"><a href="https://github.com/chokulp/consistency_trace_based_analysis_0058838d" rel="noopener">consistency_trace_based_analysis_0058838d</a></div>
+      <div class="desc">（术语表的一致性场景）输入分布改变后，术语表的一致性的结论会不会失效？用口径一致性比对给出鲁棒性边界。</div>
+    </li>
     <li><div class="name"><a href="https://github.com/chokulp/glossary" rel="noopener">glossary</a></div>
       <div class="desc">为每一项打分并与阈值比较，明确标出通过、边界与不通过三档</div>
     </li>
